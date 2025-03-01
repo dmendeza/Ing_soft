@@ -32,7 +32,6 @@ loadPolygon();
 let btnTrees= document.getElementById("btnTrees");
 
 btnTrees.addEventListener('click',  async function(){
-    //    try{
     
             let response= await fetch("arboles.geojson");
             let data = await response.json();
@@ -46,10 +45,4 @@ btnTrees.addEventListener('click',  async function(){
             }
                
             ).addTo(map);
-    
-            
-     //   }
-     //   catch(error){
-     //       console.error("Can´t load")
-     //   }
     });
